@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "8c5d6040-7791-46ce-bdd3-5f1e1e61f800",
+		"name": "gamequest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "State",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/state?PlayerId=f9c619de-878c-48be-a481-72f942fb94dc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"state"
+					],
+					"query": [
+						{
+							"key": "PlayerId",
+							"value": "f9c619de-878c-48be-a481-72f942fb94dc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Progress",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"PlayerId\":\"f9c619de-878c-48be-a481-72f942fb94dc\",\n\t\"PlayerLevel\":\"1\",\n\t\"ChipAmountBet\":\"125.00\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/progress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"progress"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
